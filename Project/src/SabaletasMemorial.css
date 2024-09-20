@@ -7,11 +7,16 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.247);
 }
 
 .sabaletas-navbar-left {
@@ -22,22 +27,28 @@ html {
 .sabaletas-menu-button {
   display: none;
   background: none;
-  border: none;
+  padding: 8px 15px;
+  border: 1px solid #343434;
+  border-radius: 10px;
   font-size: 1rem;
-  color: rgb(39, 37, 37);
+  color: #343434;
   cursor: pointer;
   margin-right: 1rem;
-  transition: color 0.3s ease;
 }
 
 .sabaletas-menu-button:hover {
-  color: rgb(39, 37, 37);
+  background-color: #c7cccf;
+
 }
 
 .sabaletas-title {
-  color: rgb(39, 37, 37);
+  color: #343434;
   font-size: 1.5rem;
   margin: 0;
+  margin-left: 60px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .sabaletas-menu {
@@ -45,56 +56,36 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: 60px;
 }
 
 .sabaletas-menu li {
-  margin: 0 1rem;
+  margin: 0 15px;
 }
 
 .sabaletas-menu a {
   color: rgb(39, 37, 37);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 760px) {
-  .sabaletas-menu-button {
-    display: block;
-  }
 
-  .sabaletas-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  .sabaletas-menu.open {
-    display: flex;
-  }
-
-  .sabaletas-menu li {
-    margin: 1rem 0;
-    text-align: center;
-  }
-}
 
 
 .sabaletas-container {
   min-height: 100vh;
-  background-color: #f7fafc;
-  font-family: 'Roboto', sans-serif;
+  background-color: #e5f0f8;
+  font-family: "Inria Sans", sans-serif;
   color: #333;
 }
 
 .sabaletas-header {
-  margin-top: 60px;
-  background-color: #b91c1c;
+  margin-top: 90px;
+  background-image: url("https://periferiaprensa.com/wp-content/uploads/2023/03/6_7_8_Paramilitarismo-4-Pacifista-1600x800.jpg");
+  background-position: center;
+  background-size: cover;
   color: white;
-  padding: 3rem;
+  padding: 11rem;
   text-align: center;
   transition: background-color 0.3s ease;
 }
@@ -103,7 +94,7 @@ html {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-
+  font-family: "Inria Sans", sans-serif;
 }
 
 .sabaletas-header p {
@@ -116,16 +107,21 @@ html {
   margin: 0 auto;
 }
 
-.sabaletas-section {
-  padding-top: 60px; /* Ajusta este valor si es necesario */
-  margin-top: -60px; /* Ajusta este valor si es necesario */
+.sabaletas-header{
+  padding-top: 330px; /* Ajusta este valor si es necesario */
+  margin-top: -90px; 
 }
 
 .sabaletas-section {
-  margin-bottom: 3rem;
+  padding-top: 90px; /* Ajusta este valor si es necesario */
+  margin-top: -90px; /* Ajusta este valor si es necesario */
+}
+.sabaletas-section {
+  margin-bottom: 2rem;
 }
 
 .sabaletas-section h2 {
+  font-family: "Inria Sans", sans-serif;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
@@ -134,8 +130,81 @@ html {
 
 .sabaletas-section p,
 .sabaletas-section ul {
+  font-family: "Poppins", sans-serif; 
   font-size: 1.125rem;
   line-height: 1.6;
+}
+
+.porque-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.porque-container p{
+  max-width: 500px;
+}
+
+.jumImage {
+  max-width: 23%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Diseño para la sección de Yuri Banguera */
+.yuri-container {
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+.yuri {
+  border-radius: 50%;
+  width: 280px; /* Ajusta según sea necesario */
+  height: 280px; /* Ajusta según sea necesario */
+  object-fit: cover;
+}
+
+.se-busca {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Diseño para el recuadro de desaparición forzada */
+.recuadro {
+  margin-top: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 12px 15px;
+}
+
+.recuadro p{
+  text-align: center;
+}
+
+/* Diseño para la sección de justicia */
+.justicia-container {
+  display: flex;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.impunidad-image {
+  max-width: 45%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
+}
+
+.impunidad-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 .sabaletas-cards {
@@ -145,7 +214,15 @@ html {
   margin-bottom: 3rem;
 }
 
+.sabaletas-cards img {
+  display: block;
+  border-radius: 0.5rem;
+}
+
 .sabaletas-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Esto alinea la imagen y el texto verticalmente */
   background-color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -154,9 +231,17 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sabaletas-card:hover {
+.sabaletas-card1 {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sabaletas-card,.sabaletas-card1:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
 }
 
 .sabaletas-demand-cards {
@@ -208,8 +293,11 @@ html {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .sabaletas-header {
-    padding: 2rem;
+
+  .sabaletas-header{
+    padding: 4rem;
+    padding-top: 230px; 
+    margin-top: -90px; 
   }
 
   .sabaletas-header h1 {
@@ -237,4 +325,63 @@ html {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+  .sabaletas-card {
+    display: flex;
+
+  }
+}
+@media (max-width: 828px) {
+  .sabaletas-navbar {
+    padding: 1.5rem;
+  }
+  .sabaletas-menu-button {
+    display: block;
+  }
+  .sabaletas-title {
+    margin-left: 0;
+    font-size: 1.25rem;
+  }
+  
+
+  .sabaletas-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+
+  .sabaletas-menu.open {
+    display: flex;
+    border-top: 1px solid #3434345e;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.144);
+  }
+
+  .sabaletas-menu li {
+    margin:0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sabaletas-menu li:hover{
+    border-bottom: 1.2px solid #3434345e;
+  }
+
+
+  .porque-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jumImage {
+    max-width: 50%;
+    margin-top: 25px;
+  }
+
+  .porque-container p{
+    max-width: 1000px;
+  }
+
 }

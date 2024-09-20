@@ -1,6 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import './SabaletasMemorial.css';
+import jumImage from './img/jum.webp';
+import yuri from './img/OIP.jfif';
+import impunidad from './img/impunidad.png'
 
 export default function SabaletasMemorial() {
 
@@ -18,14 +21,14 @@ export default function SabaletasMemorial() {
           <button className="sabaletas-menu-button" onClick={toggleMenu}>
             ☰
           </button>
-          <h1 className="sabaletas-title">Masacre de Sabaletas</h1>
+          <h1 className="sabaletas-title">MASACRE DE SABALETAS</h1>
         </div>
         <ul className={`sabaletas-menu ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#terror">Día de Terror</a></li>
-          <li><a href="#porque">¿Por qué Sabaletas?</a></li>
-          <li><a href="#justicia">Demandas</a></li>
-          <li><a href="#apoyo">Apoyo</a></li>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#terror">FECHA</a></li>
+          <li><a href="#porque">¿POR QUE SABALETAS?</a></li>
+          <li><a href="#justicia">EXIGENCIAS</a></li>
+          <li><a href="#apoyo">APOYO</a></li>
         </ul>
       </nav>
 
@@ -46,35 +49,45 @@ export default function SabaletasMemorial() {
 
         <section className="sabaletas-cards">
           <div className="sabaletas-card">
+            <img src='https://cdn-icons-png.flaticon.com/128/11546/11546337.png' alt="Descripción de la imagen" width="30" height="30" />
             <h3>10 personas asesinadas</h3>
           </div>
           <div className="sabaletas-card">
+            <img src="https://cdn-icons-png.flaticon.com/128/1412/1412111.png" alt="epa" width="40" height="40"/>
             <h3>3 desaparecidos forzadamente</h3>
           </div>
           <div className="sabaletas-card">
-            <h3>3,200 desplazados</h3>
+            <img src="https://cdn-icons-png.flaticon.com/128/1312/1312661.png" alt="epa" width="40" height="40"/>
+            <h3>3,200 personas desplazadas</h3>
           </div>
         </section>
 
         <section id="porque" className="sabaletas-section">
           <h2>¿Por qué Sabaletas?</h2>
-          <p>
-            Buenaventura, debido a su ubicación estratégica en el Pacífico colombiano, ha sido históricamente un corredor
-            para el narcotráfico y disputas territoriales entre grupos armados. Esta área, rica en recursos naturales
-            y con una población mayoritariamente afrodescendiente en condiciones vulnerables, se ha convertido en
-            escenario de barbarie paramilitar.
-          </p>
+          <div className="porque-container">
+            <p>
+              Buenaventura, debido a su ubicación estratégica en el Pacífico colombiano, ha sido históricamente un corredor
+              para el narcotráfico y disputas territoriales entre grupos armados. Esta área, rica en recursos naturales
+              y con una población mayoritariamente afrodescendiente en condiciones vulnerables, se ha convertido en
+              escenario de barbarie paramilitar.
+            </p>
+            <img className='jumImage' src={jumImage} alt="Descripción de la imagen" />
+          </div>
         </section>
 
         <section className="sabaletas-section">
           <h2>Yuri Banguera: Símbolo de la Barbarie</h2>
           <p>
-            Sacado de los brazos de su párroco y desaparecido por paramilitares, Yuri representa la crueldad de la
+            Sacado de los brazos de su párroco y desaparecido por paramilitares, Yuri un menor de edad que representa la crueldad de la
             desaparición forzada. Su caso destaca la tragedia continua de muchas familias que aún buscan a sus seres queridos.
           </p>
+          <div className="yuri-container">
+            <img className='yuri' src={yuri} alt="Descripción de la imagen" height="280" />
+            <p className="se-busca">SE BUSCA YURI BANGUERA</p>
+          </div>
         </section>
 
-        <section className="sabaletas-section">
+        <section className="sabaletas-section recuadro">
           <h2>¿Qué es la desaparición forzada?</h2>
           <p>
             Es un crimen de lesa humanidad que consiste en la privación de la libertad de una persona por parte del Estado
@@ -85,25 +98,29 @@ export default function SabaletasMemorial() {
 
         <section id="justicia" className="sabaletas-section">
           <h2>15 Años de Impunidad</h2>
-          <ul>
-            <li>Solo 17 de las 100 víctimas han sido vinculadas a la investigación.</li>
-            <li>Ningún miembro de las fuerzas de seguridad ha sido investigado, a pesar de los informes de su colusión con los paramilitares.</li>
-            <li>La Fiscalía no ha realizado la exhumación de los restos de Yuri Banguera, negándole a su familia el derecho al duelo y la verdad.</li>
-          </ul>
+          <div className="justicia-container">
+            <img className='impunidad-image' src={impunidad} alt="Descripción de la imagen" />
+            <ul className="impunidad-list">
+              <li>Solo 17 de las 100 víctimas han sido vinculadas a la investigación.</li>
+              <li>Ningún miembro de las fuerzas de seguridad ha sido investigado, a pesar de los informes de su colusión con los paramilitares.</li>
+              <li>La Fiscalía no ha realizado la exhumación de los restos de Yuri Banguera, negándole a su familia el derecho al duelo y la verdad.</li>
+            </ul>
+          </div>
         </section>
 
+
         <section className="sabaletas-section">
-          <h2>Exigimos</h2>
+          <h2>Se Exije</h2>
           <div className="sabaletas-demand-cards">
-            <div className="sabaletas-card">
+            <div className="sabaletas-card1">
               <h3>Verdad</h3>
               <p>Aclaración completa de los hechos y responsabilidad de todos los actores involucrados.</p>
             </div>
-            <div className="sabaletas-card">
+            <div className="sabaletas-card1">
               <h3>Justicia</h3>
               <p>Castigo ejemplar para los responsables materiales e intelectuales de la masacre.</p>
             </div>
-            <div className="sabaletas-card">
+            <div className="sabaletas-card1">
               <h3>Reparación Integral</h3>
               <p>Atención física y psicosocial, restitución de tierras y garantías de no repetición para las víctimas y sus familias.</p>
             </div>
