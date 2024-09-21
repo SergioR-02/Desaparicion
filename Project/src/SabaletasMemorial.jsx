@@ -62,17 +62,20 @@ export default function SabaletasMemorial() {
           </div>
         </section>
 
-        <section id="porque" className="sabaletas-section">
-          <h2>¿Por qué Sabaletas?</h2>
-          <div className="porque-container">
-            <p>
-              Buenaventura, debido a su ubicación estratégica en el Pacífico colombiano, ha sido históricamente un corredor
-              para el narcotráfico y disputas territoriales entre grupos armados. Esta área, rica en recursos naturales
-              y con una población mayoritariamente afrodescendiente en condiciones vulnerables, se ha convertido en
-              escenario de barbarie paramilitar.
-            </p>
-            <img className='jumImage' src={jumImage} alt="Descripción de la imagen" />
+        <section id="porque" className="sabaletas-section sabaletas">
+          <div className='recuadro'>
+            <h2>¿Por qué Sabaletas?</h2>
+            <div className="porque-container">
+              <p>
+                Buenaventura, debido a su ubicación estratégica en el Pacífico colombiano, ha sido históricamente un corredor
+                para el narcotráfico y disputas territoriales entre grupos armados. Esta área, rica en recursos naturales
+                y con una población mayoritariamente afrodescendiente en condiciones vulnerables, se ha convertido en
+                escenario de barbarie paramilitar.
+              </p>
+              <img className='jumImage' src={jumImage} alt="Descripción de la imagen" />
+            </div>
           </div>
+          
         </section>
 
         <section className="sabaletas-section">
@@ -109,18 +112,21 @@ export default function SabaletasMemorial() {
         </section>
 
 
-        <section className="sabaletas-section">
+        <section className="sabaletas-section Exije">
           <h2>Se Exije</h2>
           <div className="sabaletas-demand-cards">
             <div className="sabaletas-card1">
+              <img className='icons'src="https://cdn-icons-png.flaticon.com/128/4855/4855230.png" alt="" />
               <h3>Verdad</h3>
               <p>Aclaración completa de los hechos y responsabilidad de todos los actores involucrados.</p>
             </div>
             <div className="sabaletas-card1">
+              <img className='icons' src="https://cdn-icons-png.flaticon.com/128/839/839861.png" alt="" />
               <h3>Justicia</h3>
               <p>Castigo ejemplar para los responsables materiales e intelectuales de la masacre.</p>
             </div>
             <div className="sabaletas-card1">
+              <img className='icons' src="https://cdn-icons-png.flaticon.com/128/11288/11288972.png" alt="" />
               <h3>Reparación Integral</h3>
               <p>Atención física y psicosocial, restitución de tierras y garantías de no repetición para las víctimas y sus familias.</p>
             </div>
@@ -130,13 +136,25 @@ export default function SabaletasMemorial() {
         <section id="apoyo" className="sabaletas-support">
           <h2>¡Honremos la memoria!</h2>
           <p>No permitamos que el olvido prevalezca sobre la verdad y la justicia.</p>
-          <button className="sabaletas-button">Apoyar la Causa</button>
+          <button
+        className="sabaletas-button"
+        onClick={() => window.open('https://www.coljuristas.org/documentos/comunicados_de_prensa/comunicado_15_annos_de_la_masacre_de_sabaletas.pdf', '_blank')}
+    >
+        Más Información
+    </button>
         </section>
       </main>
 
       <footer className="sabaletas-footer">
-        <p>Comisión Colombiana de Juristas</p>
-        <p>© {new Date().getFullYear()} Todos los derechos reservados</p>
+      <p>
+        <strong>Autores:</strong> <br />
+        Laura Maria Rubiano Salazar<br />
+        Ángel David Ruiz Patiño<br />
+        Sergio Alejandro Ruiz Hurtado<br />
+        Nahit Ruiz Pérez<br />
+        Juan Camilo Rozo Páez
+      </p><br />
+        <strong><p>© {new Date().getFullYear()} Todos los derechos reservados</p></strong>
       </footer>
     </div>
   );

@@ -1,6 +1,28 @@
 html {
   scroll-behavior: smooth;
 }
+/* Personaliza la barra de desplazamiento de toda la página */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento vertical */
+  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* El fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del fondo */
+}
+
+/* El "pulgar" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Efecto hover en el pulgar */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el ratón */
+}
+
 
 .sabaletas-navbar {
   display: flex;
@@ -74,7 +96,7 @@ html {
 
 .sabaletas-container {
   min-height: 100vh;
-  background-color: #e5f0f8;
+  background: linear-gradient(to bottom right, #f6f6f6, #e5f0f8);
   font-family: "Inria Sans", sans-serif;
   color: #333;
 }
@@ -150,6 +172,7 @@ html {
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 
 
@@ -159,6 +182,8 @@ html {
   text-align: center;
 
 }
+
+
 
 .yuri {
   border-radius: 50%;
@@ -191,7 +216,7 @@ html {
 .justicia-container {
   display: flex;
   align-items: center;
-  row-gap: 20px;
+  gap: 25px;
 }
 
 .impunidad-image {
@@ -294,8 +319,12 @@ html {
 /* Media Queries */
 @media (max-width: 768px) {
 
+  .icons{
+    width: 110px;
+  }
+
   .sabaletas-header{
-    padding: 4rem;
+    padding: 5rem;
     padding-top: 230px; 
     margin-top: -90px; 
   }
@@ -384,4 +413,13 @@ html {
     max-width: 1000px;
   }
 
+  .justicia-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .impunidad-image {
+    max-width: 75%;
+    margin: 0;
+  }
 }
