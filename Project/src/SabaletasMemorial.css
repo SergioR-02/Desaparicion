@@ -107,20 +107,20 @@ html {
   background-position: center;
   background-size: cover;
   color: white;
-  padding: 11rem;
+  padding: 10.6rem;
   text-align: center;
   transition: background-color 0.3s ease;
 }
 
 .sabaletas-header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
   font-family: "Inria Sans", sans-serif;
 }
 
 .sabaletas-header p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .sabaletas-main {
